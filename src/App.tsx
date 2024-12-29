@@ -1,9 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Minesweeper } from './pages/Minesweeper'
 
 const App = () => (
     <BrowserRouter>
         <Routes>
-            <Route path='/' element={<b>Hi</b>} />
+            <Route path='/' element={<Minesweeper />} />
         </Routes>
     </BrowserRouter>
 )
