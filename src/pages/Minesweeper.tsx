@@ -3,8 +3,8 @@ import { GameState, Tile, TileState } from '../types'
 import { clearUnflagged, countBoard, floodFill, generateBoard, nearbyFlagged } from '../utils/board'
 
 export const Minesweeper = () => {
-    const [rows, setRows] = useState(15)
-    const [cols, setCols] = useState(30)
+    const [rows, _] = useState(15)
+    const [cols, __] = useState(30)
 
     return <div>{<Board rows={rows} cols={cols} mines={Math.floor(0.1 * rows * cols)} />}</div>
 }
