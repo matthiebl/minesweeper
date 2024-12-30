@@ -4,7 +4,7 @@ import { Minesweeper } from './pages/Minesweeper'
 const App = () => (
     <BrowserRouter>
         <Routes>
-            <Route path='/' element={<Minesweeper />} />
+            <Route path='*' element={<Minesweeper />} />
         </Routes>
     </BrowserRouter>
 )
